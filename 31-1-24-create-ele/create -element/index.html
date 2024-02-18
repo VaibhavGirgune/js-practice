@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #outer {
+        border: 1px solid black;
+        width: 30%;
+        min-width: 200px;
+        margin: auto;
+      }
+      ::placeholder {
+        font-size: 9px;
+      }
+    </style>
+    <script>
+      function getFoodItem() {
+        let data = document.getElementById("fooditem").value; // getting value from textbox
+        console.log(data); //;printing the value types inside textbox
+        let newlistitem = document.createElement("li"); //creating a new listitem
+        //  newlistitem.className='newItem';
+        //  newlistitem.id='newItemID';
+        let newnode = document.createTextNode(data); // creating a text node with data entered inside textbox
+
+        newlistitem.appendChild(newnode); // adding textbox data inside listitem
+        let mainlistitem = document.getElementById("mainlist"); // referring unordered list
+        mainlistitem.appendChild(newlistitem); //adding listitem data inside unordered list
+      }
+    </script>
+  </head>
+  <body>
+    <div id="outer">
+      <div id="newfooditem">
+        <h2>Healthy Food</h2>
+        <input type="text" id="fooditem" placeholder="Please enter your favourite healthy food"/>
+        <button onclick="getFoodItem()">Add</button>
+      </div>
+
+      <div id="existingfooditem">
+        <ul id="mainlist">
+          <li class="list-item">Fruits</li>
+          <li class="list-item">Vegetables</li>
+          <li class="list-item">Milk</li>
+          <li class="list-item">Soya</li>
+          <li class="list-item">Rice</li>
+          <li class="list-item">Dal</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
