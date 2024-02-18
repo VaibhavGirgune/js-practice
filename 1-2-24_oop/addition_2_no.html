@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        let num1 = parseInt(prompt("Enter the first number"));
+        let num2 = parseInt(prompt("Enter the second number"));
+        let operator = parseInt(prompt("Please select operator: 1 = +, 2 = -, 3 = *, 4 = /"));
+
+        class Calculator {
+            add() {
+                return num1 + num2;
+            }
+            sub() {
+                return num1 - num2;
+            }
+            mul() {
+                return num1 * num2;
+            }
+            div() {
+                return num1 / num2;
+            }
+        }
+
+        let myCalculator = new Calculator();
+
+        switch(operator) {
+            case 1: 
+                document.write(myCalculator.add());
+                break;
+            case 2:
+                document.write(myCalculator.sub());
+                break;
+            case 3:
+                document.write(myCalculator.mul());
+                break;
+            case 4:
+                document.write(myCalculator.div());
+                break;
+            default:
+                document.write("Invalid operator selected");
+        }
+    </script>
+</body>
+</html>
