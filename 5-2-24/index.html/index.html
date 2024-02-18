@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        let account_number= 27042002;
+        let balance=5000;
+        let add_money;
+        let with_draw;
+        let my_account_number= parseInt(prompt("Enter account number."));
+        let acc= parseInt(prompt("1.deposit or 2.withdraw"));
+        
+
+        if( my_account_number==account_number)
+        {
+             alert("Account-number in correct")
+        
+       
+
+        
+        class backaccount{
+        deposit(){
+          
+          add_money= parseInt(prompt("Enter the money to add in bank"));
+          let bal= add_money + balance;
+          document.write("Avilable balancee is "+ balance +"<br>");
+          document.write("Deposite amount is " + add_money +"<br>");
+          document.write("Current bank balance is " + bal +"<br>")
+
+        }
+        withdraw(){
+         with_draw= parseInt(prompt("Enter the withdraw money"));
+          let dr = balance - with_draw;
+          document.write("Avilable balance is "+ balance +"<br>");
+          document.write("withdraw amount is "+ with_draw +"<br>");
+          document.write("Current bank balance is " + dr +"<br>")
+          
+
+        
+       }
+      }
+
+       let de= new backaccount();
+       if (acc == 1) {
+        de.deposit();
+        
+       } 
+       else if(acc == 2) {
+        de.withdraw();
+       }
+       else{
+        
+       }
+      }
+         else{
+              document.write("Please!! check your account number");
+           
+        }
+    </script>
+  </head>
+  <body></body>
+</html>

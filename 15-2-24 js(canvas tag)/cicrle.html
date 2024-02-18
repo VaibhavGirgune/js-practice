@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas
+    width="600"
+    height="400"
+    id="mycanvas"
+    style="border: 1px solid black"
+  ></canvas>
+</body>
+<script>
+     const v = document.getElementById("mycanvas");
+     const g = v.getContext("2d");
+
+     g.beginPath();
+     g.arc(200, 180, 80, 0, 2 * Math.PI);
+     g.stroke(); // <-- Corrected to stroke() with lowercase 's'
+     g.fillStyle="Skyblue";
+     g.fill();
+</script>
+</html>

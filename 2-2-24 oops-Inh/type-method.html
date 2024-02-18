@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+               let a=10;
+               let b=20;
+
+                  class Employee
+                  {
+
+                     constructor()
+                       {
+                        a=20;
+                        b=30;
+                        console.log("I am constructor of class Employee "+a +" "+b);
+                       }
+                       getSal()   //called function
+                       {
+                        return 400000;
+                       }
+
+                       static getName()
+                       {
+                        console.log("Hello I am javascript");
+                       }
+
+                  }
+
+                    let emp=new Employee();
+                    let emp2=new Employee();
+            //   let salary=emp.getSal(); // calling function
+            //   Employee.getName(); prototype method
+            //         console.log(salary);
+            //         let bonus=salary*0.20;
+            //         console.log("Bonus is: "+bonus)
+
+            emp.a=100;
+            console.log(emp.a);
+            emp2.a=200;
+            console.log(emp2.a);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

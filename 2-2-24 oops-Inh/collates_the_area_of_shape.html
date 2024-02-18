@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+          let a=parseInt(prompt("enter the length"));
+          let b=parseInt(prompt("enter the width"));
+          let c=parseInt(prompt("enter the radies for circal"));
+          let d;
+          let e;
+//----------------------------------------------------------------
+          class areacircal{
+              m1(){
+                   d = 3.14*c*c;
+             console.log("area of circal " + d)
+             return d;
+          }
+      }
+          let aa= new areacircal()
+          aa.m1();
+
+// -----------------------------------------------------
+
+          class arearec{
+              m2(){
+                   e=a*b;
+             console.log("area of circal " + e)
+             return e;
+          }
+      }
+          let bb= new arearec()
+          bb.m2();
+
+// --------------------------------------------------
+
+          class combo{
+              constructor(){
+                  console.log("area of circal " + d  + " and " + " area of circal " + e );
+              }
+
+          }
+          let cc= new combo();
+//  ----------------------------------------------------
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      width="200"
+      height="100"
+      id="mycanvas"
+      style="border: 1px solid black"
+    ></canvas>
+  </body>
+  <script>
+    // Step1 - Get the reference of canvas
+    const canvas1 = document.getElementById("mycanvas");
+
+    // step2- create the drawing object
+    const ctx = canvas1.getContext("2d");
+
+    // step3- use properties and function of drawing object
+    // ctx.fillStyle = "#EEBB00";
+    // ctx.fillRect(0, 0, 150, 70);
+
+    //  Define a path
+    ctx.beginPath();
+    // starting the drawing point
+    ctx.moveTo(0, 0);
+
+    // Ending the drawing point
+    ctx.lineTo(200, 100);
+
+    // Draw the line
+    ctx.stroke();
+  </script>
+</html>

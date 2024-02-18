@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ .v {
+    display: flex;
+    justify-content: center;
+  }
+</style>
+
+<body>
+  <h1>Copy's The TEXT </h1><br>
+  <input type="text" id="ab" class="v" onchange="getdata()"><br>
+  <p>copy when press Enter</p>
+  <input type="text" id="cc" class="v">
+  <script>
+    function getdata(){
+        document.getElementById('cc').value = document.getElementById('ab').value;
+    }
+  </script>
+</body>
+</html>
