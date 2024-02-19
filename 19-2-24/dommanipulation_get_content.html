@@ -7,19 +7,19 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-    <p>
-        I am vaibhav girgune and <b>i'm good boy</b>
-    </p>
+    <div>
+        I am vaibhav girgune and <h3>i'm good boy</h3>
+    </div>
     <button id="text">Get_text</button>
     <button id="html">Get_html</button>
 </body>
 <script>
     $(document).ready(function() {
         $("#text").click(function(){
-            alert($("p").text());
+            alert($("div").text());
         });
         $("#html").click(function(){
-            alert($("p").html());
+            alert($("div").html());
         });
     });
 </script>
