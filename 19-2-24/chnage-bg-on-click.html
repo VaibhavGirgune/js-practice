@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <button id="color" onclick="color()">Click</button>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#color").css("background-color", "blue");
+        $("#color").css("display" , "flex");
+    });
+    function color() {
+        $("button").css("background-color", "red");
+    }
+</script>
+</html>
+
+<!-- <script src="/jquery-3.7.1.min.js"></script>
+    <style>
+        input{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <input type="submit" value="Change">
+
+    <script>
+        $(document).ready(function(){
+            $("[type]").click(function(){
+                $("[type]").css("background-color","lightsalmon");
+            })
+        })
+    </script> -->
