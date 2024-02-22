@@ -7,19 +7,14 @@
 </head>
 <script src="/jquery-3.7.1.min.js"></script>
 <script>
-    var emp = {
-        name :" vaibhav",
-        age :12
-    }
-     console.log(emp.name);
-     console.log(emp.age);
+    $(document).ready( function(){
+        $("div").mouseleave(function(){
+            $("body").css("background-color", "red")
 
-     emp.name="ram";
-     emp.age=13
-     console.log(emp.name);
-     console.log(emp.age);
+        })
+    });
 </script>
 <body>
-    
+    <div>Click me</div>
 </body>
 </html>

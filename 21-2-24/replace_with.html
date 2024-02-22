@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#b1").click(function () {
+          $("p").replaceWith("<h1> This is heading replacing paragraph </h1");
+        });
+
+        $("#b2").click(function () {
+          $("p").replaceWith("<h6> This is heading replacing paragraph </h6>");
+          $("p").replaceWith("<h6> This is heading replacing paragraph </h6>");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>
+      React is used to create single page application by following component
+      based designing architecture
+    </p>
+    <button id="b1">change paragraph</button>
+    <button id="b2">change heading1</button>
+  </body>
+</html>
