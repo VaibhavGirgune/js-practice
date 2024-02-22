@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/22-2-24 Ajax_event handling/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#mybtn").click(function(){
+                $.getJSON("/22-2-24 Ajax_event handling/employ.json" , function (e) {
+                    $("#load").html("<p>Employee Name : " + e.name + "</p>" +
+                                   "<p>Employee Age : " + e.age + " years</p>" +
+                                   "<p>Employee Sex : " + e.sex + "</p>");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>Data</p>
+    <div id="load" style="background-color: antiquewhite;"></div>
+    <button id="mybtn">click</button>
+</body>
+</html>
